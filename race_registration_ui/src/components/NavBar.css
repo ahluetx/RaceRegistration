@@ -1,0 +1,24 @@
+/* src/components/NavBar.css */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3; /* Higher than both carousel and race info section */
+  }
+  

@@ -1,0 +1,39 @@
+/* src/components/RaceInfoSection.css */
+.race-info-section {
+    width: 100%;
+    padding: 1rem;
+    transform: translateY(100vh); /* Initially position it off-screen */
+    transition: transform 0.5s ease; /* Smooth transition for moving into view */
+  }
+  .race-info-section.visible {
+    transform: translateY(0); /* Bring into view when visible */
+  }
+  
+  .race-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    /* Add additional styling as needed */
+  }
+  
+  .race-info-item.left .race-logo {
+    margin-right: 1rem;
+  }
+  
+  .race-info-item.right {
+    flex-direction: row-reverse;
+  }
+  
+  .race-info-item.right .race-logo {
+    margin-left: 1rem;
+  }
+  
+  .race-logo {
+    width: 350px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .race-description {
+    margin: auto;
+  }
+  

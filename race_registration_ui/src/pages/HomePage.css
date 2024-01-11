@@ -1,0 +1,16 @@
+/* src/pages/HomePage.css */
+.home-page {
+    position: relative;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    z-index: 1; /* Ensures the carousel is below the RaceInfoSection */
+  }
+  
+  .race-info-section {
+    position: relative;
+    z-index: 2; /* Ensures the RaceInfoSection is above the Carousel */
+    margin-top: -100px; /* Adjust based on your design, pulls the section up over the carousel */
+  }
+  

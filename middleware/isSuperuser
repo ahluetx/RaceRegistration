@@ -1,0 +1,10 @@
+// Middleware to check if the user is a superuser
+function isSuperuser(req, res, next) {
+  if (req.user && req.user.isSuperuser) {
+    next();
+  } else {
+    res.status(403).send('Access denied.');
+  }
+}
+
+module.exports = isSuperuser;

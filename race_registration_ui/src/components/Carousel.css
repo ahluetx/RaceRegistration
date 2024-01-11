@@ -1,0 +1,21 @@
+/* src/components/Carousel.css */
+.carousel-container {
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden; /* This will clip the images if they are too tall */
+  }
+  
+  .slick-slide div {
+    display: flex;
+    justify-content: center; /* This will center the image horizontally */
+    align-items: center; /* This will center the image vertically */
+    height: 500px; /* Set a fixed height for your slides */
+  }
+  
+  .carousel-container img {
+    max-width: 100%; /* Set a max-width to scale down large images */
+    max-height: 100%; /* Set a max-height to scale down if the image is too tall */
+    object-fit: contain; /* This will ensure the full image is always visible and centered */
+    margin: auto; /* This will help with centering if your image is not as wide as the container */
+  }
+  
